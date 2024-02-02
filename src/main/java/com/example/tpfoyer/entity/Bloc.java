@@ -19,7 +19,7 @@ public class Bloc {
     private String capaciteBloc;
     @ManyToOne
     private Foyer foyer;
-
+// cascade dont sur le  fils  dans un parent
     @OneToMany(mappedBy = "bloc")
     private Set<Chambre> listChambre;
 
