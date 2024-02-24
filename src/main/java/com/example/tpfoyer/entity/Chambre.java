@@ -21,7 +21,8 @@ public class Chambre {
   @ManyToOne
     private  Bloc bloc;
 
-  @OneToMany
+  @OneToMany(fetch = FetchType.EAGER)
+
     private Set<Reservation> listReservation;
 
 }
